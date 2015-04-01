@@ -20,7 +20,8 @@ var app = {
 
     db:'undefined',
     // webserver: 'http://chp.atuhogar.com.mx/',
-    webserver: 'http://192.168.100.14:8000/',
+    // webserver: 'http://192.168.100.14:8000/',
+    webserver: 'http://coca-prospeccion.appssoriano-ariza.com',
 
     // Application Constructor
     initialize: function() {

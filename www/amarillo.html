@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Menu</title>
+  </head>
+  <body>
+    
+    <div data-role="page">
+
+      <div data-role="header" data-theme="a" data-add-back-btn="true">
+        <h1>Coca Cola</h1>
+      </div>
+
+      <div role="main" class="ui-content">
+
+        <img class="page-header-img" src="img/buttons/undecided.png">
+        
+        <form id="yellow-form" action="menu.html">
+
+          <input type="hidden" name="kind" value="Y">
+
+          <div class="ui-field-contain">
+            <label for="yellow-first-name">Nombre</label>
+            <input id="yellow-first-name" name="first_name" type="text">
+          </div>
+
+          <div class="ui-field-contain">
+            <label for="yellow-last-name">Apellidos</label>
+            <input id="yellow-last-name" name="last_name" type="text">
+          </div>
+
+          <div class="ui-field-contain">
+            <label for="yellow-phone">Teléfono</label>
+            <input id="yellow-phone" name="phone" type="text">
+          </div>
+
+          <div class="ui-field-contain">
+            <label for="yellow-phone-other">Otro teléfono</label>
+            <input id="yellow-phone-other" name="phone_other" type="text">
+          </div>
+
+          <div class="ui-field-contain">
+            <label for="yellow-address-street">Calle</label>
+            <input id="yellow-address-street" name="street" type="text">
+          </div>
+
+          <div class="ui-field-contain">
+            <label for="yellow-address-number">No.</label>
+            <input id="yellow-address-number" name="address_number" type="text">
+          </div>
+
+          <div class="ui-field-contain">
+            <label for="yellow-address-colony">Colonia</label>
+            <input id="yellow-address-colony" name="colony" type="text">
+          </div>
+
+          <div class="ui-field-contain">
+            <label for="yellow-address-town">Del/Municipio</label>
+            <input id="yellow-address-town" name="town" type="text">
+          </div>
+
+          <div class="ui-field-contain">
+            <label for="yellow-address-country">Estado</label>
+            <input id="yellow-address-country" name="country" type="text">
+          </div>
+
+          <div class="ui-field-contain">
+            <label for="yellow-address-zip">C.P.</label>
+            <input id="yellow-address-zip" name="zip_code" type="text">
+          </div>
+
+          <div class="ui-filed-contain">
+            <label for="yellow-date">¿Cuándo podríamos contactarle?</label>
+            <input id="yellow-date" name="contact_date" type="date" data-role="date">
+          </div>
+
+          <button type="submit" class="ui-btn ui-corner-all">Enviar ubicación</button>
+        </form>
+        
+
+        <div data-role="popup" id="yellow-map-popup">
+          <a href="#" data-rel="back" data-role="button" data-theme="b" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+          <div id="yellow-map-canvas" style="width:100%; height:350px; min-width:250px"></div>
+          <button class="ui-btn ui-corner-all ui-inline" id="yellow-popup-save">Guardar</button>
+        </div>
+
+
+        <script type="text/javascript" src="js/maps.js"></script>
+        <script type="text/javascript" src="js/yellowForm.js"></script>
+      </div>
+    </div>
+  </body>
+</html>

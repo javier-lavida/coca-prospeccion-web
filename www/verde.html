@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Green</title>
+  </head>
+  <body>
+    
+    <div data-role="page">
+
+
+      <div data-role="header" data-theme="a" data-add-back-btn="true">
+        <h1>Coca Cola</h1>
+      </div>
+
+      <div role="main" class="ui-content">
+
+        <img class="page-header-img" src="img/headers/interested.png">
+        
+        <form id="green-form" action="register_ok.html" data-transition="flip">
+
+          <input type="hidden" name="kind" value="G">
+          
+          <div class="ui-field-contain">
+            <label for="green-first-name">Nombre</label>
+            <input id="green-first-name" name="first_name" type="text">
+          </div>
+
+          <div class="ui-field-contain">
+            <label for="green-last-name">Apellidos</label>
+            <input id="green-last-name" name="last_name" type="text">
+          </div>
+
+          <div class="ui-field-contain">
+            <label for="green-phone">Teléfono</label>
+            <input id="green-phone" name="phone" type="text">
+          </div>
+
+          <div class="ui-field-contain">
+            <label for="green-phone-other">Otro teléfono</label>
+            <input id="green-phone-other" name="phone_other" type="text">
+          </div>
+
+          <div class="ui-field-contain">
+            <label for="green-address-street">Calle</label>
+            <input id="green-address-street" name="street" type="text">
+          </div>
+
+          <div class="ui-field-contain">
+            <label for="green-address-number">No.</label>
+            <input id="green-address-number" name="address_number" type="text">
+          </div>
+
+          <div class="ui-field-contain">
+            <label for="green-address-colony">Colonia</label>
+            <input id="green-address-colony" name="colony" type="text">
+          </div>
+
+          <div class="ui-field-contain">
+            <label for="green-address-town">Del/Municipio</label>
+            <input id="green-address-town" name="town" type="text">
+          </div>
+
+          <div class="ui-field-contain">
+            <label for="green-address-country">Estado</label>
+            <input id="green-address-country" name="country" type="text">
+          </div>
+
+          <div class="ui-field-contain">
+            <label for="green-address-zip">C.P.</label>
+            <input id="green-address-zip" name="zip_code" type="text">
+          </div>
+
+          <button type="submit" class="ui-btn ui-corner-all">Enviar ubicación</button>
+        </form>
+
+
+        <div data-role="popup" id="green-map-popup">
+          <a data-rel="back" data-role="button" data-theme="b" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+          <div id="green-map-canvas" style="width:100%; height:350px; min-width:250px"></div>
+          <button class="ui-btn ui-corner-all ui-inline" id="green-popup-save">Guardar</button>
+        </div>
+
+        <script type="text/javascript" src="js/maps.js"></script>
+        <script type="text/javascript" src="js/greenForm.js"></script>
+      </div>
+    </div>
+
+
+  </body>
+</html>

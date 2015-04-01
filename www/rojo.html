@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Menu</title>
+  </head>
+  <body>
+    
+    <div data-role="page">
+
+      <div data-role="header" data-theme="a" data-add-back-btn="true">
+        <h1>Coca Cola</h1>
+      </div>
+
+      <div role="main" class="ui-content">
+
+        <img src="img/buttons/not_interested.png" class="page-header-img">
+
+        <form id="red-form" action="menu.html">
+
+          <input type="hidden" name="kind" value="R">
+
+          <div class="ui-field-contain">
+            <label for="red-first-name">Nombre</label>
+            <input id="red-first-name" name="first_name" type="text">
+          </div>
+
+          <div class="ui-field-contain">
+            <label for="red-last-name">Apellidos</label>
+            <input id="red-last-name" name="last_name" type="text">
+          </div>
+
+          <div class="ui-field-contain">
+            <label for="red-phone">Teléfono</label>
+            <input id="red-phone" name="phone" type="text">
+          </div>
+
+          <div class="ui-field-contain">
+            <label for="red-phone-other">Otro teléfono</label>
+            <input id="red-phone-other" name="phone_other" type="text">
+          </div>
+
+          <div class="ui-field-contain">
+            <label for="red-address-street">Calle</label>
+            <input id="red-address-street" name="street" type="text">
+          </div>
+
+          <div class="ui-field-contain">
+            <label for="red-address-number">No.</label>
+            <input id="red-address-number" name="address_number" type="text">
+          </div>
+
+          <div class="ui-field-contain">
+            <label for="red-address-colony">Colonia</label>
+            <input id="red-address-colony" name="colony" type="text">
+          </div>
+
+          <div class="ui-field-contain">
+            <label for="red-address-town">Del/Municipio</label>
+            <input id="red-address-town" name="town" type="text">
+          </div>
+
+          <div class="ui-field-contain">
+            <label for="red-address-country">Estado</label>
+            <input id="red-address-country" name="country" type="text">
+          </div>
+
+          <div class="ui-field-contain">
+            <label for="red-address-zip">C.P.</label>
+            <input id="red-address-zip" name="zip_code" type="text">
+          </div>
+
+          <div class="ui-filed-contain">
+            <label for="red-reason">Comentarios</label>
+            <select id="red-reason" name="red_reason">
+              <option>No le interesa</option>
+              <option>Está muy caro</option>
+              <option>No toma refresco</option>
+              <option>No está quien toma la decisión</option>
+              <option>No permitieron el acceso</option>
+              <option>Otra</option>
+            </select>
+          </div>
+
+          <button type="submit" class="ui-btn ui-corner-all">Ver mapa</button>
+
+
+        </form>
+
+
+        <div data-role="popup" id="red-map-popup">
+          <a href="#" data-role="button" data-theme="b" data-icon="delete" data-rel="back" data-iconpos="notext" class="ui-btn-right">Close</a>
+          <div id="red-map-canvas" style="width:100%; height:350px; min-width:250px"></div>
+          <button class="ui-btn ui-corner-all ui-inline" id="red-popup-save">Guardar</button>
+        </div>
+
+        <script type="text/javascript" src="js/maps.js"></script>
+        <script type="text/javascript" src="js/redForm.js"></script>
+
+ 
+      </div>
+    </div>
+  </body>
+</html>

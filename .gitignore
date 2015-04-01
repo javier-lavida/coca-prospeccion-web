@@ -1,0 +1,5 @@
+.DS_Store
+.cordova
+platforms
+*/cordova.js
+*/phonegap.js

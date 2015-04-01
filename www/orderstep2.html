@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Menu</title>
+  </head>
+  <body>
+
+
+    
+    <div data-role="page" id="products-page">
+
+      <div data-role="header" data-theme="a" data-add-back-btn="true">
+        <h1>Coca Cola</h1>
+      </div>
+
+      <div role="main" class="ui-content">
+
+        <ul data-role="listview" id="products" style="margin-bottom: 15px;">
+
+        </ul>
+
+        <div class="text-center">
+          <a href="#" class="send-order-btn send-order-close" data-role="button">Guardar y finalizar pedido</a>
+          <a href="#" class="send-order-btn" data-role="button">Guardar y continuar pedido </a>
+        </div>
+
+
+        <div data-role="popup" id="addRemoveProductPopup" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="min-width:250px;">
+          <div data-role="header" data-theme="a">
+            <h1>Editar pedido</h1>
+            <span class="ui-li-count" data-theme="b" id="popupCount">0</span>
+          </div>
+          <div role="main" class="ui-content">
+            <h3 class="ui-title" id="popupTitle"></h3>
+            <p id="popupContent"></p>
+            <ul data-role="listview" style="margin-bottom: 15px; margin-top: 10px;">
+              <li data-icon="plus">
+                <a href="#" id="addProductsAnchor">
+                Añadir
+                </a>
+              </li>
+              <li data-icon="minus">
+                <a href="#" id="removeProductsAnchor">
+                Quitar
+                </a>
+              </li>
+            </ul>
+            <a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Aceptar</a>
+            
+          </div>
+
+        </div>
+
+        <script type="text/javascript" src="js/order/getProducts.js"></script>
+      </div>
+    </div>
+  </body>
+</html>
